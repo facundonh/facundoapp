@@ -1,0 +1,14 @@
+<nav class="nav_principal">
+   <ul>
+      <li id="logo">Polariss</li>
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#">Crear</a></li>
+      <% if puser_signed_in? %>
+         <li> <%= link_to "Cerrar Sesion", destroy_puser_session_path, method: :delete %></li>
+      <% else %>
+         <li> <%=  link_to "Iniciar sesion", new_puser_session_path %></li>
+         <li><%= link_to "Crear cuenta", new_puser_registration_path %></li>
+
+      <% end %>
+   </ul>
+</nav>

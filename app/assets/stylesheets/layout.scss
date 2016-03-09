@@ -1,0 +1,55 @@
+@import url(https://fonts.googleapis.com/css?family=Varela+Round|Questrial|Comfortaa:400,700|Permanent+Marker|Montserrat:400,700);
+@import "variables";
+*{
+   margin: 0;
+   padding: 0;
+}
+
+a{
+   color: $second_color;
+   text-decoration: none;
+}
+a:hover{
+   color: $third_color;
+   text-decoration: underline;
+}
+body{
+   background: $primary_color;
+   color: $font_color;
+   font-family: 'Questrial',sans-serif;
+}
+
+.nav_principal{
+   border-bottom: 1px solid $second_color;
+   padding: 1rem;
+   margin-bottom: 1rem;
+}
+
+.nav_principal ul li{
+   display: inline-block;
+   list-style: none;
+   margin-right: 2%;
+   font-weight: 600;
+   width: 18%;
+   vertical-align: middle;
+   font-size: 1.4rem;
+   text-align: center;
+
+}
+
+#logo{
+   font-size: 3rem;
+   margin-right: 1rem;
+}
+
+.nav_principal ul li:last-child{
+   margin-right: 0;
+}
+.principal_title{
+   font-family: 'Comfortaa',sans-serif;
+   font-weight: 400;
+}
+.container{
+   width: 90%;
+   margin: 0 auto;
+}

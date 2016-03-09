@@ -1,0 +1,26 @@
+
+<h1 class="principal-title">Listado de articulos</h1>
+<h3 class="secondary-title"> Aqui abajo estarán los diferentes articulos</h3>
+
+<section class="all_articles">
+
+   <% @articles.each do |article| %>
+   <article class="field-article">
+      <h1 class="title-article"> <%= article.title %></h1>
+      <p class="body-article"> <%= article.body %> </p>
+      <div class="list-action">
+         <ul>
+            <li> <%= link_to "Eliminar", article, method: :delete %></li>
+            <li><%= link_to "Editar", edit_article_path(article) %></li>
+         </ul>
+      </div>
+   </article>
+   <% end %>
+
+   <% @articles.each do |article| %>
+      <span> Cantidad de articulos <%= Article.all.count %></span>
+
+   <% end %>
+
+   <span><%= link_to "Nuevo articulo", new_article_path %></span>
+</section>

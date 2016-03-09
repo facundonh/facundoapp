@@ -1,0 +1,31 @@
+@import "../variables";
+.form_new_article{
+   background: rgba($second_color,0.3);
+   width: 90%;
+   margin: 0 auto;
+   padding: .4rem;
+   overflow: hidden;
+}
+
+.input_control,.textarea_control{
+   width: 100%;
+   border: 0;
+   margin: .4rem 0 0.2rem 0;
+   max-width: 100%;
+   min-width: 100%;
+   background: transparent;
+   border-bottom: 1px solid white;
+   font-size: 1.3rem;
+   color: #eee;
+   // padding: .4rem;
+}
+.textarea_control{
+   height: 300px;
+}
+
+.btn_submit{
+   // margin: .2rem auto;
+   width: 200px;
+   // display: block;
+   float: right;
+}
