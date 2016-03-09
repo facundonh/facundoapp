@@ -1,7 +1,12 @@
 source 'https://rubygems.org'
 
-# Gemas agregadas.
+# ======== Gemas agregadas ==========.
+
+# Devise => Para la autenticacion de usuarios
 gem 'devise'
+#Paperclip => Para el trabajo con archivos
+gem "paperclip","~> 4.3"
+
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
